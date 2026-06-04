@@ -1,0 +1,17 @@
+{
+  "firstname": "John",
+  "lastname": "Doe",
+  "email": "john@example.com",
+  "phone":"9876543210",
+  "gender": "male",
+  "dob":"1999-03-27",
+  "country": "India",
+  "city":"Mumbai",
+  "password":"pass123",
+  "cnfrmpassword":"pass123",
+  "interests":"playwright",
+  "invalidEmail":"notanemail",
+  "selectgender":"female"
+
+
+}

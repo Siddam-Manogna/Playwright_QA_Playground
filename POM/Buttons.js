@@ -9,6 +9,7 @@ export class Buttons{
         this.btnstatechange=page.locator("#btn-action-result")
         this.rightclick=page.getByTestId("btn-right-click")
         this.disable=page.getByTestId('btn-disabled')
+        this.button=page.locator(".p-6  button")
     }
     async gotoHome(){
        await this.gotoHomebtn.click()
@@ -60,9 +61,17 @@ export class Buttons{
 
     async focus(){
         await this.page.keyboard.press('Tab');
-        await this.gotoHomebtn.focus();
-        await expect(this.gotoHomebtn).toBeFocused();
+        await this.doubelclickbtn.focus();
+        await expect(this.doubelclickbtn).toBeFocused();
         await this.page.keyboard.press('Enter');
-        await expect(this.page.getByText('Master Automation Testing With')).toBeVisible()
+        await expect(this.btnstatechange).toHaveText("You Double-clicked on button!")
+    }
+
+    async buttonnames(){
+        const names=await this.button.allTextContents()
+        console.log(names)
+        const btncount=await this.button.count()
+        console.log(btncount)
+        
     }
 }

@@ -29,6 +29,7 @@ test("QA Playground",async ({page})=>{
     await buttons.Enabled()
     await buttons.SetViewportsizecase()
     await buttons.focus()
+    await buttons.buttonnames()
 
 
 
