@@ -11,7 +11,10 @@
   "cnfrmpassword":"pass123",
   "interests":"playwright",
   "invalidEmail":"notanemail",
-  "selectgender":"female"
+  "selectgender":"female",
+  "fruit":"Apple",
+  "countrydd":"India"
+
 
 
 }

@@ -1,5 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
+const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -12,6 +14,24 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  
+reporter: [
+['list'],
+    ['html', { outputFolder: `playwright-report/run-${timestamp}`, open: 'never' }],
+    ['json', { outputFile: `test-results/results-${timestamp}.json` }],
+    ['junit', { outputFile: `test-results/junit-${timestamp}.xml` }],
+
+  ],
+
+  /*reporter: [
+        ['html', { 
+            outputFolder: 'playwright-report',
+            open: 'never'
+        }],
+        // Save JSON report — never gets overwritten
+        ['json', { outputFile: `test-results/report-${Date.now()}.json` }],
+    ],*/
+
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -22,14 +42,17 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  //reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    screenshot: 'on',               // always take screenshot
+        video: 'retain-on-failure',     // save video on failure
+        trace: 'on',          
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-npxretry',
+  
     
     browserName: 'chromium',
     channel: 'chrome'
