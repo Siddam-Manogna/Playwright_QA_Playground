@@ -45,7 +45,7 @@ reporter: [
   //reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    screenshot: 'on',               // always take screenshot
+       screenshot: 'on',               // always take screenshot
         video: 'retain-on-failure',     // save video on failure
         trace: 'on',          
     /* Base URL to use in actions like `await page.goto('')`. */
