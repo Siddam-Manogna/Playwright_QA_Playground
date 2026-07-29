@@ -1,7 +1,7 @@
 import{test,expect} from '@playwright/test'
 import { Homepage } from '../POM/Homepage'
 import { PractiseElements } from '../POM/PractiseElements'
-import { Buttons } from '../POM/buttons'
+import { Buttons } from '../POM/Buttons'
 
 test("QA Playground",async ({page})=>{
 

@@ -16,10 +16,12 @@ const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
 export default defineConfig({
   
 reporter: [
-['list'],
-    ['html', { outputFolder: `playwright-report/run-${timestamp}`, open: 'never' }],
-    ['json', { outputFile: `test-results/results-${timestamp}.json` }],
-    ['junit', { outputFile: `test-results/junit-${timestamp}.xml` }],
+ ['list'],
+ ['allure-playwright'],
+  ['html', { outputFolder: `playwright-report/run-${timestamp}`, open: 'never' }],
+  ['json', { outputFile: `test-results/results-${timestamp}.json` }],
+  ['junit', { outputFile: `test-results/junit-${timestamp}.xml` }],
+    
 
   ],
 
