@@ -1,0 +1,1171 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Amazonprices.spec.js >> Amazon test
+- Location: tests\Amazonprices.spec.js:4:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - navigation "Shortcuts menu" [ref=e3]:
+    - heading "Skip to" [level=2] [ref=e4]
+    - list "Skip to" [ref=e5]:
+      - listitem [ref=e6]:
+        - link "main content" [ref=e7] [cursor=pointer]:
+          - /url: "#skippedLink"
+          - text: Main content
+    - separator [ref=e8]
+    - heading "Keyboard shortcuts" [level=2] [ref=e9]
+    - list "Keyboard shortcuts" [ref=e10]:
+      - listitem [ref=e11]:
+        - link "Search, alt, forward slash" [ref=e12] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e13]:
+            - generic [ref=e14]: Search
+            - generic [ref=e15]:
+              - generic [ref=e16]: alt
+              - generic [ref=e17]: +
+              - generic [ref=e18]: /
+      - listitem [ref=e19]:
+        - link "Cart, shift, alt, c" [ref=e20] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e21]:
+            - generic [ref=e22]: Cart
+            - generic [ref=e23]:
+              - generic [ref=e24]: shift
+              - generic [ref=e25]: +
+              - generic [ref=e26]: alt
+              - generic [ref=e27]: +
+              - generic [ref=e28]: C
+      - listitem [ref=e29]:
+        - link "Home, shift, alt, h" [ref=e30] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e31]:
+            - generic [ref=e32]: Home
+            - generic [ref=e33]:
+              - generic [ref=e34]: shift
+              - generic [ref=e35]: +
+              - generic [ref=e36]: alt
+              - generic [ref=e37]: +
+              - generic [ref=e38]: H
+      - listitem [ref=e39]:
+        - link "Your orders, shift, alt, o" [ref=e40] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e41]:
+            - generic [ref=e42]: Orders
+            - generic [ref=e43]:
+              - generic [ref=e44]: shift
+              - generic [ref=e45]: +
+              - generic [ref=e46]: alt
+              - generic [ref=e47]: +
+              - generic [ref=e48]: O
+      - listitem [ref=e49]:
+        - button "Show/hide shortcuts, shift, alt, z" [ref=e50] [cursor=pointer]:
+          - generic [ref=e51]:
+            - generic [ref=e52]: Show/Hide shortcuts
+            - generic [ref=e53]:
+              - generic [ref=e54]: shift
+              - generic [ref=e55]: +
+              - generic [ref=e56]: alt
+              - generic [ref=e57]: +
+              - generic [ref=e58]: Z
+    - generic [ref=e64]: To move between items, use your keyboard's up or down arrows.
+  - banner [ref=e65]:
+    - navigation "Primary" [ref=e66]:
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - link "Amazon.in" [ref=e70] [cursor=pointer]:
+            - /url: /ref=nav_logo
+            - generic: .in
+          - button "Delivering to Hyderabad 500001 Update location" [ref=e73] [cursor=pointer]:
+            - generic [ref=e75]:
+              - generic [ref=e76]: Delivering to Hyderabad 500001
+              - generic [ref=e77]: Update location
+        - search [ref=e80]:
+          - generic [ref=e83]:
+            - generic [ref=e85]: All
+            - combobox "Select the department you want to search in" [ref=e87] [cursor=pointer]:
+              - option "All Categories" [selected]
+              - option "Alexa Skills"
+              - option "Amazon Devices"
+              - option "Amazon Fashion"
+              - option "Amazon Fresh"
+              - option "Amazon Fresh Meat"
+              - option "Amazon Pharmacy"
+              - option "Appliances"
+              - option "Apps & Games"
+              - option "Audible Audiobooks"
+              - option "Baby"
+              - option "Beauty"
+              - option "Books"
+              - option "Car & Motorbike"
+              - option "Clothing & Accessories"
+              - option "Collectibles"
+              - option "Computers & Accessories"
+              - option "Deals"
+              - option "Electronics"
+              - option "Furniture"
+              - option "Garden & Outdoors"
+              - option "Gift Cards"
+              - option "Grocery & Gourmet Foods"
+              - option "Health & Personal Care"
+              - option "Home & Kitchen"
+              - option "Industrial & Scientific"
+              - option "Jewellery"
+              - option "Kindle Store"
+              - option "Luggage & Bags"
+              - option "Luxury Beauty"
+              - option "Movies & TV Shows"
+              - option "MP3 Music"
+              - option "Music"
+              - option "Musical Instruments"
+              - option "Office Products"
+              - option "Pet Supplies"
+              - option "Prime Video"
+              - option "Shoes & Handbags"
+              - option "Software"
+              - option "Sports, Fitness & Outdoors"
+              - option "Subscribe & Save"
+              - option "Tools & Home Improvement"
+              - option "Toys & Games"
+              - option "Under ₹500"
+              - option "Video Games"
+              - option "Watches"
+          - searchbox "Search Amazon.in" [ref=e90]
+          - generic "Go" [ref=e93] [cursor=pointer]:
+            - button "Go" [ref=e94]
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - link "Choose a language for shopping in Amazon India. The current selection is English (EN)." [ref=e98] [cursor=pointer]:
+              - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+              - generic [ref=e101]:
+                - img "India" [ref=e102]
+                - generic [ref=e103]: EN
+            - button "Expand to Change Language or Country" [ref=e104] [cursor=pointer]
+          - generic [ref=e105]:
+            - link "Hello, sign in Account & Lists" [ref=e106] [cursor=pointer]:
+              - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Fnew-releases%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+              - generic [ref=e108]: Hello, sign in
+              - generic [ref=e109]: Account & Lists
+            - button "Expand Account and Lists" [ref=e110] [cursor=pointer]
+          - link "Returns & Orders" [ref=e111] [cursor=pointer]:
+            - /url: /gp/css/order-history?ref_=nav_orders_first
+            - generic [ref=e112]: Returns
+            - generic [ref=e113]: "& Orders"
+          - link "0 items in cart" [ref=e114] [cursor=pointer]:
+            - /url: /gp/cart/view.html?ref_=nav_cart
+            - generic [ref=e116]: "0"
+            - generic [ref=e119]: Cart
+      - generic [ref=e120]:
+        - button "Open All Categories Menu" [ref=e122] [cursor=pointer]:
+          - generic [ref=e124]: All
+        - list [ref=e128]:
+          - listitem [ref=e129]:
+            - generic [ref=e130]:
+              - link "Fresh" [ref=e131] [cursor=pointer]:
+                - /url: /fresh?ref_=nav_cs_grocery
+              - button "Fresh Details" [ref=e132] [cursor=pointer]
+          - listitem [ref=e133]:
+            - link "Prime Video" [ref=e135] [cursor=pointer]:
+              - /url: https://www.primevideo.com/offers/nonprimehomepage/ref_=nav_dvm_crs_in_s_gw_bt_dk_p_hamburgr?ref_=avod_desktop_topnav
+          - listitem [ref=e136]:
+            - link "Sell" [ref=e138] [cursor=pointer]:
+              - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+          - listitem [ref=e139]:
+            - link "Bestsellers" [ref=e141] [cursor=pointer]:
+              - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+          - listitem [ref=e142]:
+            - link "Today's Deals" [ref=e144] [cursor=pointer]:
+              - /url: /deals?ref_=nav_cs_gb
+          - listitem [ref=e145]:
+            - link "Mobiles" [ref=e147] [cursor=pointer]:
+              - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+          - listitem [ref=e148]:
+            - link "New Releases" [ref=e150] [cursor=pointer]:
+              - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+          - listitem [ref=e151]:
+            - generic [ref=e152]:
+              - link "Prime" [ref=e153] [cursor=pointer]:
+                - /url: /prime?ref_=nav_cs_primelink_nonmember
+              - button "Prime Details" [ref=e154] [cursor=pointer]
+          - listitem [ref=e155]:
+            - link "Amazon Pay" [ref=e157] [cursor=pointer]:
+              - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+          - listitem [ref=e158]:
+            - link "Electronics" [ref=e160] [cursor=pointer]:
+              - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+          - listitem [ref=e161]:
+            - link "Customer Service" [ref=e163] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+          - listitem [ref=e164]:
+            - link "Home & Kitchen" [ref=e166] [cursor=pointer]:
+              - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+          - listitem [ref=e167]:
+            - link "Fashion" [ref=e169] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+          - listitem [ref=e170]:
+            - link "Computers" [ref=e172] [cursor=pointer]:
+              - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+          - listitem [ref=e173]:
+            - link "Toys & Games" [ref=e175] [cursor=pointer]:
+              - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+          - listitem [ref=e176]:
+            - link "Car & Motorbike" [ref=e178] [cursor=pointer]:
+              - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+          - listitem [ref=e179]:
+            - link "Sports, Fitness & Outdoors" [ref=e181] [cursor=pointer]:
+              - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+          - listitem [ref=e182]:
+            - link "Home Improvement" [ref=e184] [cursor=pointer]:
+              - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+          - listitem [ref=e185]:
+            - link "Gift Cards" [ref=e187] [cursor=pointer]:
+              - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+          - listitem [ref=e188]:
+            - link "Pet Supplies" [ref=e190] [cursor=pointer]:
+              - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+          - listitem [ref=e191]:
+            - link "Beauty & Personal Care" [ref=e193] [cursor=pointer]:
+              - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+          - listitem [ref=e194]:
+            - link "Video Games" [ref=e196] [cursor=pointer]:
+              - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+          - listitem [ref=e197]:
+            - link "Grocery & Gourmet Foods" [ref=e199] [cursor=pointer]:
+              - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+          - listitem [ref=e200]:
+            - link "Custom Products" [ref=e202] [cursor=pointer]:
+              - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+          - listitem [ref=e203]:
+            - link "Baby" [ref=e205] [cursor=pointer]:
+              - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+          - listitem [ref=e206]:
+            - link "Health, Household & Personal Care" [ref=e208] [cursor=pointer]:
+              - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+          - listitem [ref=e209]:
+            - link "AmazonBasics" [ref=e211] [cursor=pointer]:
+              - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+          - listitem [ref=e212]:
+            - link "Audible" [ref=e214] [cursor=pointer]:
+              - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+          - listitem [ref=e215]:
+            - link "Subscribe & Save" [ref=e217] [cursor=pointer]:
+              - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+          - listitem [ref=e218]:
+            - link "Kindle eBooks" [ref=e220] [cursor=pointer]:
+              - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+          - listitem [ref=e221]:
+            - link "Books" [ref=e223] [cursor=pointer]:
+              - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+          - listitem [ref=e224]:
+            - link "Flights" [ref=e226] [cursor=pointer]:
+              - /url: /flights?ref_=nav_cs_apay_desktop_topnav_flights
+        - link [ref=e230] [cursor=pointer]:
+          - /url: /gp/video/ssoredirect/?ie=UTF8&pvp=%2F%3Fref_%3Ddvm_crs_in_s_gw_swm_dk_np_dvilmuth&ref_=nav_swm_dvm_crs_in_s_gw_swm_dk_np_dvilmuth&pf_rd_p=83ea7f9a-94e1-494d-bfb0-687ddae97d4a&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=TB3X2SVXMB72GVFR39DB
+      - dialog [ref=e231]
+  - generic [ref=e233]:
+    - generic [ref=e234]:
+      - generic [ref=e237]:
+        - list:
+          - listitem [ref=e238]:
+            - link "Bestsellers" [ref=e240] [cursor=pointer]:
+              - /url: /gp/bestsellers/ref=zg_bsnr_tab_bs
+          - listitem [ref=e241]:
+            - link "Hot New Releases" [ref=e243] [cursor=pointer]:
+              - /url: /gp/new-releases/ref=zg_bsnr_tab_bsnr
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - heading "Amazon Hot New Releases" [level=1] [ref=e247]
+          - text: Our bestselling new and future releases. Updated frequently.
+        - heading "Hot New Releases" [level=1] [ref=e248]
+    - generic [ref=e249]:
+      - group "Navigation Tree" [ref=e252]:
+        - list [ref=e253]:
+          - listitem [ref=e254]:
+            - generic [ref=e256]:
+              - text: Any Department
+              - generic [ref=e257]: (Current)
+          - listitem [ref=e258]:
+            - list [ref=e260]:
+              - listitem [ref=e261]:
+                - link "Amazon Launchpad" [ref=e263] [cursor=pointer]:
+                  - /url: /gp/new-releases/boost/ref=zg_bsnr_nav_boost_0
+              - listitem [ref=e264]:
+                - link "Amazon Renewed" [ref=e266] [cursor=pointer]:
+                  - /url: /gp/new-releases/amazon-renewed/ref=zg_bsnr_nav_amazon-renewed_0
+              - listitem [ref=e267]:
+                - link "Baby Products" [ref=e269] [cursor=pointer]:
+                  - /url: /gp/new-releases/baby/ref=zg_bsnr_nav_baby_0
+              - listitem [ref=e270]:
+                - link "Bags, Wallets and Luggage" [ref=e272] [cursor=pointer]:
+                  - /url: /gp/new-releases/luggage/ref=zg_bsnr_nav_luggage_0
+              - listitem [ref=e273]:
+                - link "Beauty" [ref=e275] [cursor=pointer]:
+                  - /url: /gp/new-releases/beauty/ref=zg_bsnr_nav_beauty_0
+              - listitem [ref=e276]:
+                - link "Books" [ref=e278] [cursor=pointer]:
+                  - /url: /gp/new-releases/books/ref=zg_bsnr_nav_books_0
+              - listitem [ref=e279]:
+                - link "Clothing & Accessories" [ref=e281] [cursor=pointer]:
+                  - /url: /gp/new-releases/apparel/ref=zg_bsnr_nav_apparel_0
+              - listitem [ref=e282]:
+                - link "Computers & Accessories" [ref=e284] [cursor=pointer]:
+                  - /url: /gp/new-releases/computers/ref=zg_bsnr_nav_computers_0
+              - listitem [ref=e285]:
+                - link "Electronics" [ref=e287] [cursor=pointer]:
+                  - /url: /gp/new-releases/electronics/ref=zg_bsnr_nav_electronics_0
+              - listitem [ref=e288]:
+                - link "Garden & Outdoors" [ref=e290] [cursor=pointer]:
+                  - /url: /gp/new-releases/garden/ref=zg_bsnr_nav_garden_0
+              - listitem [ref=e291]:
+                - link "Health & Personal Care" [ref=e293] [cursor=pointer]:
+                  - /url: /gp/new-releases/hpc/ref=zg_bsnr_nav_hpc_0
+              - listitem [ref=e294]:
+                - link "Home & Kitchen" [ref=e296] [cursor=pointer]:
+                  - /url: /gp/new-releases/kitchen/ref=zg_bsnr_nav_kitchen_0
+              - listitem [ref=e297]:
+                - link "Home Improvement" [ref=e299] [cursor=pointer]:
+                  - /url: /gp/new-releases/home-improvement/ref=zg_bsnr_nav_home-improvement_0
+              - listitem [ref=e300]:
+                - link "Jewellery" [ref=e302] [cursor=pointer]:
+                  - /url: /gp/new-releases/jewelry/ref=zg_bsnr_nav_jewelry_0
+              - listitem [ref=e303]:
+                - link "Kindle Store" [ref=e305] [cursor=pointer]:
+                  - /url: /gp/new-releases/digital-text/ref=zg_bsnr_nav_digital-text_0
+              - listitem [ref=e306]:
+                - link "Movies & TV Shows" [ref=e308] [cursor=pointer]:
+                  - /url: /gp/new-releases/dvd/ref=zg_bsnr_nav_dvd_0
+              - listitem [ref=e309]:
+                - link "Music" [ref=e311] [cursor=pointer]:
+                  - /url: /gp/new-releases/music/ref=zg_bsnr_nav_music_0
+              - listitem [ref=e312]:
+                - link "Musical Instruments" [ref=e314] [cursor=pointer]:
+                  - /url: /gp/new-releases/musical-instruments/ref=zg_bsnr_nav_musical-instruments_0
+              - listitem [ref=e315]:
+                - link "Office Products" [ref=e317] [cursor=pointer]:
+                  - /url: /gp/new-releases/office/ref=zg_bsnr_nav_office_0
+              - listitem [ref=e318]:
+                - link "Pet Supplies" [ref=e320] [cursor=pointer]:
+                  - /url: /gp/new-releases/pet-supplies/ref=zg_bsnr_nav_pet-supplies_0
+              - listitem [ref=e321]:
+                - link "Shoes & Handbags" [ref=e323] [cursor=pointer]:
+                  - /url: /gp/new-releases/shoes/ref=zg_bsnr_nav_shoes_0
+              - listitem [ref=e324]:
+                - link "Sports, Fitness & Outdoors" [ref=e326] [cursor=pointer]:
+                  - /url: /gp/new-releases/sports/ref=zg_bsnr_nav_sports_0
+              - listitem [ref=e327]:
+                - link "Toys & Games" [ref=e329] [cursor=pointer]:
+                  - /url: /gp/new-releases/toys/ref=zg_bsnr_nav_toys_0
+              - listitem [ref=e330]:
+                - link "Video Games" [ref=e332] [cursor=pointer]:
+                  - /url: /gp/new-releases/videogames/ref=zg_bsnr_nav_videogames_0
+              - listitem [ref=e333]:
+                - link "Watches" [ref=e335] [cursor=pointer]:
+                  - /url: /gp/new-releases/watches/ref=zg_bsnr_nav_watches_0
+      - generic [ref=e336]:
+        - group [ref=e341]:
+          - generic [ref=e342]:
+            - generic [ref=e343]:
+              - heading "Hot New Releases in Home Improvement" [level=2] [ref=e344]
+              - link "Hot New Releases in Home Improvement - See More" [ref=e346] [cursor=pointer]:
+                - /url: /gp/new-releases/home-improvement/ref=zg_bsnr_home-improvement_sm
+                - text: See More
+            - generic [ref=e349]: Page 1 of 5
+          - generic [ref=e351]:
+            - button "Previous page" [ref=e353] [cursor=pointer]:
+              - generic [ref=e356]: Previous page
+            - group [ref=e358]:
+              - list [ref=e359]:
+                - listitem [ref=e360]:
+                  - generic [ref=e361]:
+                    - generic [ref=e362]: "#1"
+                    - generic [ref=e366]:
+                      - link [ref=e367] [cursor=pointer]:
+                        - /url: /UrbanWipe-Multi-Purpose-Chemicals-Effortlessly-Bathrooms/dp/B0H6G5TKBG/ref=zg_bsnr_c_home-improvement_d_sccl_1/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6G5TKBG&psc=1
+                      - generic [ref=e370]:
+                        - link "UrbanWipe Magic Eraser Cleaning Sponge | Pack of 4 | Powerful Multi-Purpose Stain Remover | No Chemicals Required | Effortlessly Cleans Walls, Kitchens, Bathrooms, Shoes, Switch Boards & More" [ref=e371] [cursor=pointer]:
+                          - /url: /UrbanWipe-Multi-Purpose-Chemicals-Effortlessly-Bathrooms/dp/B0H6G5TKBG/ref=zg_bsnr_c_home-improvement_d_sccl_1/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6G5TKBG&psc=1
+                          - generic "UrbanWipe Magic Eraser Cleaning Sponge | Pack of 4 | Powerful Multi-Purpose Stain Remover | No Chemicals Required | Effortlessly Cleans Walls, Kitchens, Bathrooms, Shoes, Switch Boards & More" [ref=e373]: UrbanWipe Magic Eraser Cleaning Sponge | Pack of 4 | Powerful Multi-Purpose Stain Remover | No Chemicals Required | Effortlessly…
+                        - link "4.7 out of 5 stars, 36 ratings" [ref=e376] [cursor=pointer]:
+                          - /url: /product-reviews/B0H6G5TKBG/ref=zg_bsnr_c_home-improvement_d_sccl_1_cr/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6G5TKBG
+                          - generic [ref=e378]: 4.7 out of 5 stars
+                          - text: "36"
+                        - link "₹249.00" [ref=e382] [cursor=pointer]:
+                          - /url: /UrbanWipe-Multi-Purpose-Chemicals-Effortlessly-Bathrooms/dp/B0H6G5TKBG/ref=zg_bsnr_c_home-improvement_d_sccl_1/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6G5TKBG&psc=1
+                          - generic [ref=e384]: ₹249.00
+                - listitem [ref=e385]:
+                  - generic [ref=e386]:
+                    - generic [ref=e387]: "#2"
+                    - generic [ref=e391]:
+                      - link [ref=e392] [cursor=pointer]:
+                        - /url: /YETI-Bathroom-Cleaning-Brush-Wiper/dp/B0H6JXGV6V/ref=zg_bsnr_c_home-improvement_d_sccl_2/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6JXGV6V&psc=1
+                      - generic [ref=e395]:
+                        - link "YETI 3-in-1 Bathroom Cleaning Brush with Wiper - Bathroom Cleaning Brush Long Handle 180° Rotate Toilet Brush Bathroom Tiles Cleaning, Wiper Floor Scrub for Kitchen Bathroom Cleaning (Multi-Color)" [ref=e396] [cursor=pointer]:
+                          - /url: /YETI-Bathroom-Cleaning-Brush-Wiper/dp/B0H6JXGV6V/ref=zg_bsnr_c_home-improvement_d_sccl_2/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6JXGV6V&psc=1
+                          - generic "YETI 3-in-1 Bathroom Cleaning Brush with Wiper - Bathroom Cleaning Brush Long Handle 180° Rotate Toilet Brush Bathroom Tiles Cleaning, Wiper Floor Scrub for Kitchen Bathroom Cleaning (Multi-Color)" [ref=e398]: YETI 3-in-1 Bathroom Cleaning Brush with Wiper - Bathroom Cleaning Brush Long Handle 180° Rotate Toilet Brush Bathroom…
+                        - link "4.8 out of 5 stars, 23,857 ratings" [ref=e401] [cursor=pointer]:
+                          - /url: /product-reviews/B0H6JXGV6V/ref=zg_bsnr_c_home-improvement_d_sccl_2_cr/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6JXGV6V
+                          - generic [ref=e403]: 4.8 out of 5 stars
+                          - text: 23,857
+                        - link "₹279.00" [ref=e407] [cursor=pointer]:
+                          - /url: /YETI-Bathroom-Cleaning-Brush-Wiper/dp/B0H6JXGV6V/ref=zg_bsnr_c_home-improvement_d_sccl_2/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6JXGV6V&psc=1
+                          - generic [ref=e409]: ₹279.00
+                - listitem [ref=e410]:
+                  - generic [ref=e411]:
+                    - generic [ref=e412]: "#3"
+                    - generic [ref=e416]:
+                      - link [ref=e417] [cursor=pointer]:
+                        - /url: /Vadagam-Protective-Reusable-Breathable-SunDrying/dp/B0H4VN438T/ref=zg_bsnr_c_home-improvement_d_sccl_3/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H4VN438T&psc=1
+                      - generic [ref=e420]:
+                        - link "Large Pure Cotton Papad & Vadagam Drying Cloth with Protective Zipper Net Cover | Reusable Breathable SunDrying Sheet for Spices, Millets, Grains Indoor Outdoor Terrace Food Mat, Pack of 1 Size 48*36" [ref=e421] [cursor=pointer]:
+                          - /url: /Vadagam-Protective-Reusable-Breathable-SunDrying/dp/B0H4VN438T/ref=zg_bsnr_c_home-improvement_d_sccl_3/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H4VN438T&psc=1
+                          - generic "Large Pure Cotton Papad & Vadagam Drying Cloth with Protective Zipper Net Cover | Reusable Breathable SunDrying Sheet for Spices, Millets, Grains Indoor Outdoor Terrace Food Mat, Pack of 1 Size 48*36" [ref=e423]: Large Pure Cotton Papad & Vadagam Drying Cloth with Protective Zipper Net Cover | Reusable Breathable SunDrying…
+                        - link "4.7 out of 5 stars, 16 ratings" [ref=e426] [cursor=pointer]:
+                          - /url: /product-reviews/B0H4VN438T/ref=zg_bsnr_c_home-improvement_d_sccl_3_cr/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H4VN438T
+                          - generic [ref=e428]: 4.7 out of 5 stars
+                          - text: "16"
+                        - link "₹219.00" [ref=e432] [cursor=pointer]:
+                          - /url: /Vadagam-Protective-Reusable-Breathable-SunDrying/dp/B0H4VN438T/ref=zg_bsnr_c_home-improvement_d_sccl_3/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H4VN438T&psc=1
+                          - generic [ref=e434]: ₹219.00
+                    - button "Watch the video" [ref=e436] [cursor=pointer]:
+                      - img "Watch the video" [ref=e438]
+                - listitem [ref=e444]:
+                  - generic [ref=e445]:
+                    - generic [ref=e446]: "#4"
+                    - generic [ref=e450]:
+                      - link [ref=e451] [cursor=pointer]:
+                        - /url: /DAZIBAO%C2%AE-Silicone-Bottom-Sealing-Cockroach/dp/B0H2B7SPT9/ref=zg_bsnr_c_home-improvement_d_sccl_4/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H2B7SPT9&psc=1
+                      - generic [ref=e454]:
+                        - link "DAZIBAO® Silicone Door Bottom/Under Gap Filler Rubber Sealing Strip, Door Sealer Strip for Cockroach, Insect and Bugs, Seal Air & Dust, Brown, 39 inches" [ref=e455] [cursor=pointer]:
+                          - /url: /DAZIBAO%C2%AE-Silicone-Bottom-Sealing-Cockroach/dp/B0H2B7SPT9/ref=zg_bsnr_c_home-improvement_d_sccl_4/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H2B7SPT9&psc=1
+                          - generic "DAZIBAO® Silicone Door Bottom/Under Gap Filler Rubber Sealing Strip, Door Sealer Strip for Cockroach, Insect and Bugs, Seal Air & Dust, Brown, 39 inches" [ref=e457]: DAZIBAO® Silicone Door Bottom/Under Gap Filler Rubber Sealing Strip, Door Sealer Strip for Cockroach, Insect and Bugs, Seal…
+                        - link "4.2 out of 5 stars, 94 ratings" [ref=e460] [cursor=pointer]:
+                          - /url: /product-reviews/B0H2B7SPT9/ref=zg_bsnr_c_home-improvement_d_sccl_4_cr/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H2B7SPT9
+                          - generic [ref=e462]: 4.2 out of 5 stars
+                          - text: "94"
+                        - link "₹179.00" [ref=e466] [cursor=pointer]:
+                          - /url: /DAZIBAO%C2%AE-Silicone-Bottom-Sealing-Cockroach/dp/B0H2B7SPT9/ref=zg_bsnr_c_home-improvement_d_sccl_4/520-4122555-3020922?pd_rd_w=1usVS&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H2B7SPT9&psc=1
+                          - generic [ref=e468]: ₹179.00
+            - button "Next page" [ref=e470] [cursor=pointer]:
+              - generic [ref=e473]: Next page
+          - generic: 
+        - group [ref=e478]:
+          - generic [ref=e479]:
+            - generic [ref=e480]:
+              - heading "Hot New Releases in Toys & Games" [level=2] [ref=e481]
+              - link "Hot New Releases in Toys & Games - See More" [ref=e483] [cursor=pointer]:
+                - /url: /gp/new-releases/toys/ref=zg_bsnr_toys_sm
+                - text: See More
+            - generic [ref=e486]: Page 1 of 5
+          - generic [ref=e488]:
+            - button "Previous page" [ref=e490] [cursor=pointer]:
+              - generic [ref=e493]: Previous page
+            - group [ref=e495]:
+              - list [ref=e496]:
+                - listitem [ref=e497]:
+                  - generic [ref=e498]:
+                    - generic [ref=e499]: "#1"
+                    - generic [ref=e503]:
+                      - link [ref=e504] [cursor=pointer]:
+                        - /url: /Dumpling-Squishy-Mystery-Sensory-Anxiety/dp/B0H94YNRC5/ref=zg_bsnr_c_toys_d_sccl_1/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H94YNRC5&psc=1
+                      - generic [ref=e507]:
+                        - link "Dumpling Squishy Mystery Box | Cute Big Squishy Dumpling Stress Ball | Fidget Sensory Toy for Adults Anxiety Relief Cute Big Squishy Dumpling Stress Ball Squishy Dumpling Squishy Stress Relief" [ref=e508] [cursor=pointer]:
+                          - /url: /Dumpling-Squishy-Mystery-Sensory-Anxiety/dp/B0H94YNRC5/ref=zg_bsnr_c_toys_d_sccl_1/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H94YNRC5&psc=1
+                          - generic "Dumpling Squishy Mystery Box | Cute Big Squishy Dumpling Stress Ball | Fidget Sensory Toy for Adults Anxiety Relief Cute Big Squishy Dumpling Stress Ball Squishy Dumpling Squishy Stress Relief" [ref=e510]: Dumpling Squishy Mystery Box | Cute Big Squishy Dumpling Stress Ball | Fidget Sensory Toy for Adults Anxiety Relief Cute Big Squishy Dumpling Stress Ball Squishy…
+                        - link "₹349.00" [ref=e514] [cursor=pointer]:
+                          - /url: /Dumpling-Squishy-Mystery-Sensory-Anxiety/dp/B0H94YNRC5/ref=zg_bsnr_c_toys_d_sccl_1/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H94YNRC5&psc=1
+                          - generic [ref=e516]: ₹349.00
+                - listitem [ref=e517]:
+                  - generic [ref=e518]:
+                    - generic [ref=e519]: "#2"
+                    - generic [ref=e523]:
+                      - link [ref=e524] [cursor=pointer]:
+                        - /url: /Hot-Wheels-Ferrari-Die-Cast-5-Pack/dp/B0FHKLTSS6/ref=zg_bsnr_c_toys_d_sccl_2/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0FHKLTSS6&psc=1
+                      - generic [ref=e527]:
+                        - link "Hot Wheels Toy Ferrari Cars, Die-Cast 5-Pack in 1:64 Scale, Officially Licensed Set of 5 Ferrari Collectible Vehicles" [ref=e528] [cursor=pointer]:
+                          - /url: /Hot-Wheels-Ferrari-Die-Cast-5-Pack/dp/B0FHKLTSS6/ref=zg_bsnr_c_toys_d_sccl_2/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0FHKLTSS6&psc=1
+                          - generic [ref=e530]: Hot Wheels Toy Ferrari Cars, Die-Cast 5-Pack in 1:64 Scale, Officially Licensed Set of 5 Ferrari Collectible Vehicles
+                        - link "4.6 out of 5 stars, 165 ratings" [ref=e533] [cursor=pointer]:
+                          - /url: /product-reviews/B0FHKLTSS6/ref=zg_bsnr_c_toys_d_sccl_2_cr/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0FHKLTSS6
+                          - generic [ref=e535]: 4.6 out of 5 stars
+                          - text: "165"
+                        - link "₹1,949.00" [ref=e539] [cursor=pointer]:
+                          - /url: /Hot-Wheels-Ferrari-Die-Cast-5-Pack/dp/B0FHKLTSS6/ref=zg_bsnr_c_toys_d_sccl_2/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0FHKLTSS6&psc=1
+                          - generic [ref=e541]: ₹1,949.00
+                - listitem [ref=e542]:
+                  - generic [ref=e543]:
+                    - generic [ref=e544]: "#3"
+                    - generic [ref=e548]:
+                      - link [ref=e549] [cursor=pointer]:
+                        - /url: /SHOPOGENIX-Kids-Superhero-Mask-Costume/dp/B0H3ZY3YPX/ref=zg_bsnr_c_toys_d_sccl_3/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H3ZY3YPX&psc=1
+                      - generic [ref=e552]:
+                        - link "SHOPOGENIX Kids Superhero Mask Costume – Full Face Stretchable Cosplay with Breathable Mesh Eyes | Halloween, Birthday Party, Fancy Dress & Role Play Costume for Boys & Girls" [ref=e553] [cursor=pointer]:
+                          - /url: /SHOPOGENIX-Kids-Superhero-Mask-Costume/dp/B0H3ZY3YPX/ref=zg_bsnr_c_toys_d_sccl_3/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H3ZY3YPX&psc=1
+                          - generic "SHOPOGENIX Kids Superhero Mask Costume – Full Face Stretchable Cosplay with Breathable Mesh Eyes | Halloween, Birthday Party, Fancy Dress & Role Play Costume for Boys & Girls" [ref=e555]: SHOPOGENIX Kids Superhero Mask Costume – Full Face Stretchable Cosplay with Breathable Mesh Eyes |…
+                        - link "3.7 out of 5 stars, 42 ratings" [ref=e558] [cursor=pointer]:
+                          - /url: /product-reviews/B0H3ZY3YPX/ref=zg_bsnr_c_toys_d_sccl_3_cr/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H3ZY3YPX
+                          - generic [ref=e560]: 3.7 out of 5 stars
+                          - text: "42"
+                        - link "₹949.00" [ref=e564] [cursor=pointer]:
+                          - /url: /SHOPOGENIX-Kids-Superhero-Mask-Costume/dp/B0H3ZY3YPX/ref=zg_bsnr_c_toys_d_sccl_3/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H3ZY3YPX&psc=1
+                          - generic [ref=e566]: ₹949.00
+                    - button "Watch the video" [ref=e568] [cursor=pointer]:
+                      - img "Watch the video" [ref=e570]
+                - listitem [ref=e576]:
+                  - generic [ref=e577]:
+                    - generic [ref=e578]: "#4"
+                    - generic [ref=e582]:
+                      - link [ref=e583] [cursor=pointer]:
+                        - /url: /ITSMYCOSTUME-Morpankh-Accessories-Janmashtami-Turquoise/dp/B0H1S65XMX/ref=zg_bsnr_c_toys_d_sccl_4/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H1S65XMX&psc=1
+                      - generic [ref=e586]:
+                        - link "ITSMYCOSTUME Krishna Dress for Baby Boy Kids Set of 10(Dhoti,Patka,Hip Cover,Mukut,Morpankh,Bansuri,Kamarband,Bajuband,Kundal) Little Krishna Ji Kanha Janmasthmi Costume for Kids" [ref=e587] [cursor=pointer]:
+                          - /url: /ITSMYCOSTUME-Morpankh-Accessories-Janmashtami-Turquoise/dp/B0H1S65XMX/ref=zg_bsnr_c_toys_d_sccl_4/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H1S65XMX&psc=1
+                          - generic "ITSMYCOSTUME Krishna Dress for Baby Boy Kids Set of 10(Dhoti,Patka,Hip Cover,Mukut,Morpankh,Bansuri,Kamarband,Bajuband,Kundal) Little Krishna Ji Kanha Janmasthmi Costume for Kids" [ref=e589]: ITSMYCOSTUME Krishna Dress for Baby Boy Kids Set of 10(Dhoti,Patka,Hip…
+                        - link "4.1 out of 5 stars, 984 ratings" [ref=e592] [cursor=pointer]:
+                          - /url: /product-reviews/B0H1S65XMX/ref=zg_bsnr_c_toys_d_sccl_4_cr/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H1S65XMX
+                          - generic [ref=e594]: 4.1 out of 5 stars
+                          - text: "984"
+                        - link "₹574.00" [ref=e598] [cursor=pointer]:
+                          - /url: /ITSMYCOSTUME-Morpankh-Accessories-Janmashtami-Turquoise/dp/B0H1S65XMX/ref=zg_bsnr_c_toys_d_sccl_4/520-4122555-3020922?pd_rd_w=YOoaD&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H1S65XMX&psc=1
+                          - generic [ref=e600]: ₹574.00
+            - button "Next page" [ref=e602] [cursor=pointer]:
+              - generic [ref=e605]: Next page
+          - generic: 
+        - group [ref=e610]:
+          - generic [ref=e612]:
+            - heading "Hot New Releases in Garden & Outdoors" [level=2] [ref=e613]
+            - link "Hot New Releases in Garden & Outdoors - See More" [ref=e615] [cursor=pointer]:
+              - /url: /gp/new-releases/garden/ref=zg_bsnr_garden_sm
+              - text: See More
+          - group [ref=e620]:
+            - list [ref=e621]:
+              - listitem [ref=e622]:
+                - generic [ref=e623]:
+                  - generic [ref=e624]: "#1"
+                  - generic [ref=e628]:
+                    - link [ref=e629] [cursor=pointer]:
+                      - /url: /Cockroach-Killer-Bait-Gel-Home/dp/B0H9WRGLND/ref=zg_bsnr_c_garden_d_sccl_1/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H9WRGLND&psc=1
+                    - generic [ref=e632]:
+                      - link "Cockroach Killer Bait Gel for Home – Natural Plant-Based Roach Control with Bait Stations – Odorless & Mess-Free Cockroach Repellent for Kitchen, Bathroom & Cabinets (1) (12)" [ref=e633] [cursor=pointer]:
+                        - /url: /Cockroach-Killer-Bait-Gel-Home/dp/B0H9WRGLND/ref=zg_bsnr_c_garden_d_sccl_1/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H9WRGLND&psc=1
+                        - generic "Cockroach Killer Bait Gel for Home – Natural Plant-Based Roach Control with Bait Stations – Odorless & Mess-Free Cockroach Repellent for Kitchen, Bathroom & Cabinets (1) (12)" [ref=e635]: Cockroach Killer Bait Gel for Home – Natural Plant-Based Roach Control with Bait Stations – Odorless & Mess-Free Cockroach…
+                      - link "5.0 out of 5 stars, 18 ratings" [ref=e638] [cursor=pointer]:
+                        - /url: /product-reviews/B0H9WRGLND/ref=zg_bsnr_c_garden_d_sccl_1_cr/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H9WRGLND
+                        - generic [ref=e640]: 5.0 out of 5 stars
+                        - text: "18"
+                      - link "₹249.00" [ref=e644] [cursor=pointer]:
+                        - /url: /Cockroach-Killer-Bait-Gel-Home/dp/B0H9WRGLND/ref=zg_bsnr_c_garden_d_sccl_1/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H9WRGLND&psc=1
+                        - generic [ref=e646]: ₹249.00
+              - listitem [ref=e647]:
+                - generic [ref=e648]:
+                  - generic [ref=e649]: "#2"
+                  - generic [ref=e653]:
+                    - link [ref=e654] [cursor=pointer]:
+                      - /url: /Cyclora-Bamboo-Management-Granules-Landscape/dp/B0H9D3FDTP/ref=zg_bsnr_c_garden_d_sccl_2/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H9D3FDTP&psc=1
+                    - generic [ref=e657]:
+                      - link "Cyclora Bamboo Weed Management Granules | Easy to Use Outdoor Granular Formula | Suitable for Garden, Yard & Landscape Areas | 100g" [ref=e658] [cursor=pointer]:
+                        - /url: /Cyclora-Bamboo-Management-Granules-Landscape/dp/B0H9D3FDTP/ref=zg_bsnr_c_garden_d_sccl_2/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H9D3FDTP&psc=1
+                        - generic "Cyclora Bamboo Weed Management Granules | Easy to Use Outdoor Granular Formula | Suitable for Garden, Yard & Landscape Areas | 100g" [ref=e660]: Cyclora Bamboo Weed Management Granules | Easy to Use Outdoor Granular Formula | Suitable for Garden, Yard &…
+                      - link "5.0 out of 5 stars, 1 ratings" [ref=e663] [cursor=pointer]:
+                        - /url: /product-reviews/B0H9D3FDTP/ref=zg_bsnr_c_garden_d_sccl_2_cr/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H9D3FDTP
+                        - generic [ref=e665]: 5.0 out of 5 stars
+                        - text: "1"
+                      - link "₹349.00" [ref=e669] [cursor=pointer]:
+                        - /url: /Cyclora-Bamboo-Management-Granules-Landscape/dp/B0H9D3FDTP/ref=zg_bsnr_c_garden_d_sccl_2/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H9D3FDTP&psc=1
+                        - generic [ref=e671]: ₹349.00
+              - listitem [ref=e672]:
+                - generic [ref=e673]:
+                  - generic [ref=e674]: "#3"
+                  - generic [ref=e678]:
+                    - link [ref=e679] [cursor=pointer]:
+                      - /url: /Cockroach-Adhesive-Pesticide-Free-Non-Toxic-Multicolor/dp/B0H724DYKK/ref=zg_bsnr_c_garden_d_sccl_3/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H724DYKK&psc=1
+                    - generic [ref=e682]:
+                      - link "Sticky Cockroach Trap with Strong Adhesive Glue Board, Pesticide-Free, Non-Toxic, Multicolor, for Kitchen, Room and Office, Safe for Pets and Kids (Pack of 5)" [ref=e683] [cursor=pointer]:
+                        - /url: /Cockroach-Adhesive-Pesticide-Free-Non-Toxic-Multicolor/dp/B0H724DYKK/ref=zg_bsnr_c_garden_d_sccl_3/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H724DYKK&psc=1
+                        - generic "Sticky Cockroach Trap with Strong Adhesive Glue Board, Pesticide-Free, Non-Toxic, Multicolor, for Kitchen, Room and Office, Safe for Pets and Kids (Pack of 5)" [ref=e685]: Sticky Cockroach Trap with Strong Adhesive Glue Board, Pesticide-Free, Non-Toxic, Multicolor, for Kitchen, Room and Office, Safe…
+                      - link "4.5 out of 5 stars, 6 ratings" [ref=e688] [cursor=pointer]:
+                        - /url: /product-reviews/B0H724DYKK/ref=zg_bsnr_c_garden_d_sccl_3_cr/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H724DYKK
+                        - generic [ref=e690]: 4.5 out of 5 stars
+                        - text: "6"
+                      - link "₹179.00" [ref=e694] [cursor=pointer]:
+                        - /url: /Cockroach-Adhesive-Pesticide-Free-Non-Toxic-Multicolor/dp/B0H724DYKK/ref=zg_bsnr_c_garden_d_sccl_3/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H724DYKK&psc=1
+                        - generic [ref=e696]: ₹179.00
+              - listitem [ref=e697]:
+                - generic [ref=e698]:
+                  - generic [ref=e699]: "#4"
+                  - generic [ref=e703]:
+                    - link [ref=e704] [cursor=pointer]:
+                      - /url: /Magnetic-Mosquito-Reinforced-Polyester-Repellent/dp/B0H98CFDGV/ref=zg_bsnr_c_garden_d_sccl_4/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H98CFDGV&psc=1
+                    - generic [ref=e707]:
+                      - link "Magnetic Mosquito Screen Door Net Curtain with Magnets Reinforced Polyester Curtain Back Door Mesh with All in One Insect Control | Insect Repellent Size 7 feet Black Color" [ref=e708] [cursor=pointer]:
+                        - /url: /Magnetic-Mosquito-Reinforced-Polyester-Repellent/dp/B0H98CFDGV/ref=zg_bsnr_c_garden_d_sccl_4/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H98CFDGV&psc=1
+                        - generic "Magnetic Mosquito Screen Door Net Curtain with Magnets Reinforced Polyester Curtain Back Door Mesh with All in One Insect Control | Insect Repellent Size 7 feet Black Color" [ref=e710]: Magnetic Mosquito Screen Door Net Curtain with Magnets Reinforced Polyester Curtain Back Door Mesh with All in One Insect…
+                      - link "4.8 out of 5 stars, 424 ratings" [ref=e713] [cursor=pointer]:
+                        - /url: /product-reviews/B0H98CFDGV/ref=zg_bsnr_c_garden_d_sccl_4_cr/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H98CFDGV
+                        - generic [ref=e715]: 4.8 out of 5 stars
+                        - text: "424"
+                      - link "₹379.00" [ref=e719] [cursor=pointer]:
+                        - /url: /Magnetic-Mosquito-Reinforced-Polyester-Repellent/dp/B0H98CFDGV/ref=zg_bsnr_c_garden_d_sccl_4/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H98CFDGV&psc=1
+                        - generic [ref=e721]: ₹379.00
+              - listitem [ref=e722]:
+                - generic [ref=e723]:
+                  - generic [ref=e724]: "#5"
+                  - generic [ref=e728]:
+                    - link [ref=e729] [cursor=pointer]:
+                      - /url: /Fungus-Mealybug-Control-Outdoor-Protection/dp/B0H7T2FYKL/ref=zg_bsnr_c_garden_d_sccl_5/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H7T2FYKL&psc=1
+                    - generic [ref=e732]:
+                      - link "Mealy Bug & Fungus Killer Spray For Plants | Mealybug Control Sprays for Indoor & Outdoor Plants, Leaves, Stems, Garden & Potted Plants | Flower Protection Spray for Home Garden | Easy to Use 200ml" [ref=e733] [cursor=pointer]:
+                        - /url: /Fungus-Mealybug-Control-Outdoor-Protection/dp/B0H7T2FYKL/ref=zg_bsnr_c_garden_d_sccl_5/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H7T2FYKL&psc=1
+                        - generic "Mealy Bug & Fungus Killer Spray For Plants | Mealybug Control Sprays for Indoor & Outdoor Plants, Leaves, Stems, Garden & Potted Plants | Flower Protection Spray for Home Garden | Easy to Use 200ml" [ref=e735]: Mealy Bug & Fungus Killer Spray For Plants | Mealybug Control Sprays for Indoor & Outdoor Plants, Leaves, Stems, Garden & Potted…
+                      - link "5.0 out of 5 stars, 10 ratings" [ref=e738] [cursor=pointer]:
+                        - /url: /product-reviews/B0H7T2FYKL/ref=zg_bsnr_c_garden_d_sccl_5_cr/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H7T2FYKL
+                        - generic [ref=e740]: 5.0 out of 5 stars
+                        - text: "10"
+                      - link "₹299.00" [ref=e744] [cursor=pointer]:
+                        - /url: /Fungus-Mealybug-Control-Outdoor-Protection/dp/B0H7T2FYKL/ref=zg_bsnr_c_garden_d_sccl_5/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H7T2FYKL&psc=1
+                        - generic [ref=e746]: ₹299.00
+              - listitem [ref=e747]:
+                - generic [ref=e748]:
+                  - generic [ref=e749]: "#6"
+                  - generic [ref=e753]:
+                    - link [ref=e754] [cursor=pointer]:
+                      - /url: /ABeanPop-100PCS-Glow-Luminous-Stones/dp/B0H4D1LV92/ref=zg_bsnr_c_garden_d_sccl_6/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H4D1LV92&psc=1
+                    - generic [ref=e757]:
+                      - link "ABeanPop 100PCS Glow in The Dark Luminous Stones – Multicolor Garden Pebbles for Outdoor Decor, Aquarium, Pathway, Lawn & Fish Tank | Reusable Glowing Rocks (Mix Colors)" [ref=e758] [cursor=pointer]:
+                        - /url: /ABeanPop-100PCS-Glow-Luminous-Stones/dp/B0H4D1LV92/ref=zg_bsnr_c_garden_d_sccl_6/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H4D1LV92&psc=1
+                        - generic "ABeanPop 100PCS Glow in The Dark Luminous Stones – Multicolor Garden Pebbles for Outdoor Decor, Aquarium, Pathway, Lawn & Fish Tank | Reusable Glowing Rocks (Mix Colors)" [ref=e760]: ABeanPop 100PCS Glow in The Dark Luminous Stones – Multicolor Garden Pebbles for Outdoor Decor, Aquarium, Pathway, Lawn & Fish…
+                      - link "4.4 out of 5 stars, 5 ratings" [ref=e763] [cursor=pointer]:
+                        - /url: /product-reviews/B0H4D1LV92/ref=zg_bsnr_c_garden_d_sccl_6_cr/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H4D1LV92
+                        - generic [ref=e765]: 4.4 out of 5 stars
+                        - text: "5"
+                      - link "₹149.00" [ref=e769] [cursor=pointer]:
+                        - /url: /ABeanPop-100PCS-Glow-Luminous-Stones/dp/B0H4D1LV92/ref=zg_bsnr_c_garden_d_sccl_6/520-4122555-3020922?pd_rd_w=sqeax&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H4D1LV92&psc=1
+                        - generic [ref=e771]: ₹149.00
+        - group [ref=e776]:
+          - generic [ref=e778]:
+            - heading "Hot New Releases in Bags, Wallets and Luggage" [level=2] [ref=e779]
+            - link "Hot New Releases in Bags, Wallets and Luggage - See More" [ref=e781] [cursor=pointer]:
+              - /url: /gp/new-releases/luggage/ref=zg_bsnr_luggage_sm
+              - text: See More
+          - group [ref=e786]:
+            - list [ref=e787]:
+              - listitem [ref=e788]:
+                - generic [ref=e789]:
+                  - generic [ref=e790]: "#1"
+                  - generic [ref=e794]:
+                    - link [ref=e795] [cursor=pointer]:
+                      - /url: /TEKCOOL-Umbrella-Protection-Windproof-case/dp/B0H2HS61TC/ref=zg_bsnr_c_luggage_d_sccl_1/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H2HS61TC&psc=1
+                    - generic [ref=e798]:
+                      - link "TEKCOOL Umbrella, UV Big Size Umbrella for Sun Protection Rain Windproof Strong Large 3 Fold For Men Women Kids Boys Girls Perfect & Stylish Windproof & Compact''" [ref=e799] [cursor=pointer]:
+                        - /url: /TEKCOOL-Umbrella-Protection-Windproof-case/dp/B0H2HS61TC/ref=zg_bsnr_c_luggage_d_sccl_1/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H2HS61TC&psc=1
+                        - generic "TEKCOOL Umbrella, UV Big Size Umbrella for Sun Protection Rain Windproof Strong Large 3 Fold For Men Women Kids Boys Girls Perfect & Stylish Windproof & Compact''" [ref=e801]: TEKCOOL Umbrella, UV Big Size Umbrella for Sun Protection Rain Windproof Strong Large 3 Fold For Men Women Kids Boys Girls…
+                      - link "4.1 out of 5 stars, 1,459 ratings" [ref=e804] [cursor=pointer]:
+                        - /url: /product-reviews/B0H2HS61TC/ref=zg_bsnr_c_luggage_d_sccl_1_cr/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H2HS61TC
+                        - generic [ref=e806]: 4.1 out of 5 stars
+                        - text: 1,459
+                      - link "₹548.00" [ref=e810] [cursor=pointer]:
+                        - /url: /TEKCOOL-Umbrella-Protection-Windproof-case/dp/B0H2HS61TC/ref=zg_bsnr_c_luggage_d_sccl_1/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H2HS61TC&psc=1
+                        - generic [ref=e812]: ₹548.00
+              - listitem [ref=e813]:
+                - generic [ref=e814]:
+                  - generic [ref=e815]: "#2"
+                  - generic [ref=e819]:
+                    - link [ref=e820] [cursor=pointer]:
+                      - /url: /FLYNGO-Carabiner-Protection-Windproof-Reinforced/dp/B0H7SLQPYC/ref=zg_bsnr_c_luggage_d_sccl_2/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H7SLQPYC&psc=1
+                    - generic [ref=e823]:
+                      - link "FLYNGO Umbrella for Rain Big Size with Carabiner Handle, UV Coated 3-Fold Travel Umbrella for Sun Protection, Windproof Reinforced 10 Dual Ribs, Automatic Open/Close" [ref=e824] [cursor=pointer]:
+                        - /url: /FLYNGO-Carabiner-Protection-Windproof-Reinforced/dp/B0H7SLQPYC/ref=zg_bsnr_c_luggage_d_sccl_2/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H7SLQPYC&psc=1
+                        - generic "FLYNGO Umbrella for Rain Big Size with Carabiner Handle, UV Coated 3-Fold Travel Umbrella for Sun Protection, Windproof Reinforced 10 Dual Ribs, Automatic Open/Close" [ref=e826]: FLYNGO Umbrella for Rain Big Size with Carabiner Handle, UV Coated 3-Fold Travel Umbrella for Sun Protection, Windproof Reinforced…
+                      - link "4.6 out of 5 stars, 34 ratings" [ref=e829] [cursor=pointer]:
+                        - /url: /product-reviews/B0H7SLQPYC/ref=zg_bsnr_c_luggage_d_sccl_2_cr/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H7SLQPYC
+                        - generic [ref=e831]: 4.6 out of 5 stars
+                        - text: "34"
+                      - link "₹499.00" [ref=e835] [cursor=pointer]:
+                        - /url: /FLYNGO-Carabiner-Protection-Windproof-Reinforced/dp/B0H7SLQPYC/ref=zg_bsnr_c_luggage_d_sccl_2/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H7SLQPYC&psc=1
+                        - generic [ref=e837]: ₹499.00
+                  - button "Watch the video" [ref=e839] [cursor=pointer]:
+                    - img "Watch the video" [ref=e841]
+              - listitem [ref=e847]:
+                - generic [ref=e848]:
+                  - generic [ref=e849]: "#3"
+                  - generic [ref=e853]:
+                    - link [ref=e854] [cursor=pointer]:
+                      - /url: /PESOMA-Travelling-Polyester-Summer-Foldable-Windshield-MaroonH/dp/B0H6S34YB9/ref=zg_bsnr_c_luggage_d_sccl_3/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6S34YB9&psc=1
+                    - generic [ref=e857]:
+                      - link "PESOMA Mini Umbrella with Case for Men & Women (Manual Open) Compact Travelling Pocket Umbrella, Polyester & UV Protect Fabric for Summer/Anti-Slip Handle- Use in Rain & Summer-Foldable Windshield" [ref=e858] [cursor=pointer]:
+                        - /url: /PESOMA-Travelling-Polyester-Summer-Foldable-Windshield-MaroonH/dp/B0H6S34YB9/ref=zg_bsnr_c_luggage_d_sccl_3/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6S34YB9&psc=1
+                        - generic "PESOMA Mini Umbrella with Case for Men & Women (Manual Open) Compact Travelling Pocket Umbrella, Polyester & UV Protect Fabric for Summer/Anti-Slip Handle- Use in Rain & Summer-Foldable Windshield" [ref=e860]: PESOMA Mini Umbrella with Case for Men & Women (Manual Open) Compact Travelling Pocket Umbrella, Polyester & UV Protect…
+                      - link "4.2 out of 5 stars, 220 ratings" [ref=e863] [cursor=pointer]:
+                        - /url: /product-reviews/B0H6S34YB9/ref=zg_bsnr_c_luggage_d_sccl_3_cr/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6S34YB9
+                        - generic [ref=e865]: 4.2 out of 5 stars
+                        - text: "220"
+                      - link "₹499.00" [ref=e869] [cursor=pointer]:
+                        - /url: /PESOMA-Travelling-Polyester-Summer-Foldable-Windshield-MaroonH/dp/B0H6S34YB9/ref=zg_bsnr_c_luggage_d_sccl_3/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6S34YB9&psc=1
+                        - generic [ref=e871]: ₹499.00
+              - listitem [ref=e872]:
+                - generic [ref=e873]:
+                  - generic [ref=e874]: "#4"
+                  - generic [ref=e878]:
+                    - link [ref=e879] [cursor=pointer]:
+                      - /url: /REXERA-Umbrella-Lightweight-Portable-Windproof/dp/B0H29Z7H94/ref=zg_bsnr_c_luggage_d_sccl_4/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H29Z7H94&psc=1
+                    - generic [ref=e882]:
+                      - link "REXERA UV Travel Mini Folding Ultra Compact pastel Umbrella with Hard Case, Manual Open 6 Ribs Lightweight Premium Portable, Windproof Small Sun & Rain Pocket Umbrella for Men and Women- Use in Rain & Summer" [ref=e883] [cursor=pointer]:
+                        - /url: /REXERA-Umbrella-Lightweight-Portable-Windproof/dp/B0H29Z7H94/ref=zg_bsnr_c_luggage_d_sccl_4/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H29Z7H94&psc=1
+                        - generic "REXERA UV Travel Mini Folding Ultra Compact pastel Umbrella with Hard Case, Manual Open 6 Ribs Lightweight Premium Portable, Windproof Small Sun & Rain Pocket Umbrella for Men and Women- Use in Rain & Summer" [ref=e885]: REXERA UV Travel Mini Folding Ultra Compact pastel Umbrella with Hard Case, Manual Open 6 Ribs Lightweight Premium Portable,…
+                      - link "4.0 out of 5 stars, 348 ratings" [ref=e888] [cursor=pointer]:
+                        - /url: /product-reviews/B0H29Z7H94/ref=zg_bsnr_c_luggage_d_sccl_4_cr/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H29Z7H94
+                        - generic [ref=e890]: 4.0 out of 5 stars
+                        - text: "348"
+                      - link "₹582.00" [ref=e894] [cursor=pointer]:
+                        - /url: /REXERA-Umbrella-Lightweight-Portable-Windproof/dp/B0H29Z7H94/ref=zg_bsnr_c_luggage_d_sccl_4/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H29Z7H94&psc=1
+                        - generic [ref=e896]: ₹582.00
+              - listitem [ref=e897]:
+                - generic [ref=e898]:
+                  - generic [ref=e899]: "#5"
+                  - generic [ref=e903]:
+                    - link [ref=e904] [cursor=pointer]:
+                      - /url: /Safari-Compartment-Hardside-Polycarbonate-Combination/dp/B097JM7K35/ref=zg_bsnr_c_luggage_d_sccl_5/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B097JM7K35&psc=1
+                    - generic [ref=e907]:
+                      - link "Safari Cabin Trolley Bag with Laptop Compartment, Hardside Polycarbonate Small (55cm) Suitcase | 360° 8 Wheel Spinner Travel Luggage| Recessed Combination Lock|Thorium Neo| Graphite Blue" [ref=e908] [cursor=pointer]:
+                        - /url: /Safari-Compartment-Hardside-Polycarbonate-Combination/dp/B097JM7K35/ref=zg_bsnr_c_luggage_d_sccl_5/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B097JM7K35&psc=1
+                        - generic "Safari Cabin Trolley Bag with Laptop Compartment, Hardside Polycarbonate Small (55cm) Suitcase | 360° 8 Wheel Spinner Travel Luggage| Recessed Combination Lock|Thorium Neo| Graphite Blue" [ref=e910]: Safari Cabin Trolley Bag with Laptop Compartment, Hardside Polycarbonate Small (55cm) Suitcase | 360° 8 Wheel Spinner…
+                      - link "4.1 out of 5 stars, 1,361 ratings" [ref=e913] [cursor=pointer]:
+                        - /url: /product-reviews/B097JM7K35/ref=zg_bsnr_c_luggage_d_sccl_5_cr/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B097JM7K35
+                        - generic [ref=e915]: 4.1 out of 5 stars
+                        - text: 1,361
+                      - link "₹2,999.00" [ref=e919] [cursor=pointer]:
+                        - /url: /Safari-Compartment-Hardside-Polycarbonate-Combination/dp/B097JM7K35/ref=zg_bsnr_c_luggage_d_sccl_5/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B097JM7K35&psc=1
+                        - generic [ref=e921]: ₹2,999.00
+              - listitem [ref=e922]:
+                - generic [ref=e923]:
+                  - generic [ref=e924]: "#6"
+                  - generic [ref=e928]:
+                    - link [ref=e929] [cursor=pointer]:
+                      - /url: /Aristocrat-Altitude-8-Wheel-Medium-Trolley/dp/B0H1MZV6F3/ref=zg_bsnr_c_luggage_d_sccl_6/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H1MZV6F3&psc=1
+                    - generic [ref=e932]:
+                      - link "Aristocrat Altitude 8-Wheel Medium Size Hard Case Trolley Bag, Surf Spray | Durable Polypropylene Case, Spacious, Combination Lock, Sturdy Zipper, Lightweight Travel Luggage, 3-Year Global Warranty" [ref=e933] [cursor=pointer]:
+                        - /url: /Aristocrat-Altitude-8-Wheel-Medium-Trolley/dp/B0H1MZV6F3/ref=zg_bsnr_c_luggage_d_sccl_6/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H1MZV6F3&psc=1
+                        - generic "Aristocrat Altitude 8-Wheel Medium Size Hard Case Trolley Bag, Surf Spray | Durable Polypropylene Case, Spacious, Combination Lock, Sturdy Zipper, Lightweight Travel Luggage, 3-Year Global Warranty" [ref=e935]: Aristocrat Altitude 8-Wheel Medium Size Hard Case Trolley Bag, Surf Spray | Durable Polypropylene Case, Spacious, Combination…
+                      - link "4.2 out of 5 stars, 1,309 ratings" [ref=e938] [cursor=pointer]:
+                        - /url: /product-reviews/B0H1MZV6F3/ref=zg_bsnr_c_luggage_d_sccl_6_cr/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H1MZV6F3
+                        - generic [ref=e940]: 4.2 out of 5 stars
+                        - text: 1,309
+                      - link "₹1,799.00" [ref=e944] [cursor=pointer]:
+                        - /url: /Aristocrat-Altitude-8-Wheel-Medium-Trolley/dp/B0H1MZV6F3/ref=zg_bsnr_c_luggage_d_sccl_6/520-4122555-3020922?pd_rd_w=wq9Yc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H1MZV6F3&psc=1
+                        - generic [ref=e946]: ₹1,799.00
+                  - button "Watch the video" [ref=e948] [cursor=pointer]:
+                    - img "Watch the video" [ref=e950]
+          - generic: 
+        - group [ref=e960]:
+          - generic [ref=e962]:
+            - heading "Hot New Releases in Home & Kitchen" [level=2] [ref=e963]
+            - link "Hot New Releases in Home & Kitchen - See More" [ref=e965] [cursor=pointer]:
+              - /url: /gp/new-releases/kitchen/ref=zg_bsnr_kitchen_sm
+              - text: See More
+          - group [ref=e970]:
+            - list [ref=e971]:
+              - listitem [ref=e972]:
+                - generic [ref=e973]:
+                  - generic [ref=e974]: "#1"
+                  - generic [ref=e978]:
+                    - link [ref=e979] [cursor=pointer]:
+                      - /url: /Doms-Doodling-Illustrations-Calligraphy-Professioanls/dp/B0BL3X9Q4Q/ref=zg_bsnr_c_kitchen_d_sccl_1/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0BL3X9Q4Q&psc=1
+                    - generic [ref=e982]:
+                      - link "Doms Pastel Brush Pens (14 Shades | 12 + 1 + 1) (Pack of 1), Multicolor" [ref=e983] [cursor=pointer]:
+                        - /url: /Doms-Doodling-Illustrations-Calligraphy-Professioanls/dp/B0BL3X9Q4Q/ref=zg_bsnr_c_kitchen_d_sccl_1/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0BL3X9Q4Q&psc=1
+                        - generic [ref=e985]: Doms Pastel Brush Pens (14 Shades | 12 + 1 + 1) (Pack of 1), Multicolor
+                      - link "4.4 out of 5 stars, 8,780 ratings" [ref=e988] [cursor=pointer]:
+                        - /url: /product-reviews/B0BL3X9Q4Q/ref=zg_bsnr_c_kitchen_d_sccl_1_cr/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0BL3X9Q4Q
+                        - generic [ref=e990]: 4.4 out of 5 stars
+                        - text: 8,780
+                      - link "₹180.00" [ref=e994] [cursor=pointer]:
+                        - /url: /Doms-Doodling-Illustrations-Calligraphy-Professioanls/dp/B0BL3X9Q4Q/ref=zg_bsnr_c_kitchen_d_sccl_1/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0BL3X9Q4Q&psc=1
+                        - generic [ref=e996]: ₹180.00
+                  - button "Watch the video" [ref=e998] [cursor=pointer]:
+                    - img "Watch the video" [ref=e1000]
+              - listitem [ref=e1006]:
+                - generic [ref=e1007]:
+                  - generic [ref=e1008]: "#2"
+                  - generic [ref=e1012]:
+                    - link [ref=e1013] [cursor=pointer]:
+                      - /url: /Fevicryl-Hobby-ideas-Mould-800/dp/B07HRV1YZW/ref=zg_bsnr_c_kitchen_d_sccl_2/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B07HRV1YZW&psc=1
+                    - generic [ref=e1016]:
+                      - link "Fevicryl Mould It Clay 900 g | Clay Set for Modelling and Sculpting | Quick Air Dry Clay for Art and Craft | Create Murals, 3D Art, Sculptures & Home Decor | Gift for Artists, Students, Children" [ref=e1017] [cursor=pointer]:
+                        - /url: /Fevicryl-Hobby-ideas-Mould-800/dp/B07HRV1YZW/ref=zg_bsnr_c_kitchen_d_sccl_2/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B07HRV1YZW&psc=1
+                        - generic "Fevicryl Mould It Clay 900 g | Clay Set for Modelling and Sculpting | Quick Air Dry Clay for Art and Craft | Create Murals, 3D Art, Sculptures & Home Decor | Gift for Artists, Students, Children" [ref=e1019]: Fevicryl Mould It Clay 900 g | Clay Set for Modelling and Sculpting | Quick Air Dry Clay for Art and Craft | Create Murals, 3D Art, Sculptures…
+                      - link "4.5 out of 5 stars, 18,043 ratings" [ref=e1022] [cursor=pointer]:
+                        - /url: /product-reviews/B07HRV1YZW/ref=zg_bsnr_c_kitchen_d_sccl_2_cr/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B07HRV1YZW
+                        - generic [ref=e1024]: 4.5 out of 5 stars
+                        - text: 18,043
+                      - link "₹264.00" [ref=e1028] [cursor=pointer]:
+                        - /url: /Fevicryl-Hobby-ideas-Mould-800/dp/B07HRV1YZW/ref=zg_bsnr_c_kitchen_d_sccl_2/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B07HRV1YZW&psc=1
+                        - generic [ref=e1030]: ₹264.00
+                  - button "Watch the video" [ref=e1032] [cursor=pointer]:
+                    - img "Watch the video" [ref=e1034]
+              - listitem [ref=e1040]:
+                - generic [ref=e1041]:
+                  - generic [ref=e1042]: "#3"
+                  - generic [ref=e1046]:
+                    - link [ref=e1047] [cursor=pointer]:
+                      - /url: /VOMZER-Cotton-Microfiber-Elastic-Bedsheet/dp/B0GYRV55XH/ref=zg_bsnr_c_kitchen_d_sccl_3/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0GYRV55XH&psc=1
+                    - generic [ref=e1050]:
+                      - link "VOMZER King Size (72x78) 300 TC Soft Cotton Feel Microfiber All Around Elastic Fitted Double Bedsheet with 2 Frill Pillow Covers | Blue Check" [ref=e1051] [cursor=pointer]:
+                        - /url: /VOMZER-Cotton-Microfiber-Elastic-Bedsheet/dp/B0GYRV55XH/ref=zg_bsnr_c_kitchen_d_sccl_3/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0GYRV55XH&psc=1
+                        - generic "VOMZER King Size (72x78) 300 TC Soft Cotton Feel Microfiber All Around Elastic Fitted Double Bedsheet with 2 Frill Pillow Covers | Blue Check" [ref=e1053]: VOMZER King Size (72x78) 300 TC Soft Cotton Feel Microfiber All Around Elastic Fitted Double Bedsheet with 2 Frill Pillow…
+                      - link "3.9 out of 5 stars, 4,345 ratings" [ref=e1056] [cursor=pointer]:
+                        - /url: /product-reviews/B0GYRV55XH/ref=zg_bsnr_c_kitchen_d_sccl_3_cr/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0GYRV55XH
+                        - generic [ref=e1058]: 3.9 out of 5 stars
+                        - text: 4,345
+                      - link "₹649.00" [ref=e1062] [cursor=pointer]:
+                        - /url: /VOMZER-Cotton-Microfiber-Elastic-Bedsheet/dp/B0GYRV55XH/ref=zg_bsnr_c_kitchen_d_sccl_3/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0GYRV55XH&psc=1
+                        - generic [ref=e1064]: ₹649.00
+                  - button "Watch the video" [ref=e1066] [cursor=pointer]:
+                    - img "Watch the video" [ref=e1068]
+              - listitem [ref=e1074]:
+                - generic [ref=e1075]:
+                  - generic [ref=e1076]: "#4"
+                  - generic [ref=e1080]:
+                    - link [ref=e1081] [cursor=pointer]:
+                      - /url: /AYSIS-%F0%9D%90%92%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%9F-Dustproof-Waterproof-Organizer/dp/B0H75JDT88/ref=zg_bsnr_c_kitchen_d_sccl_4/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H75JDT88&psc=1
+                    - generic [ref=e1084]:
+                      - link "AYSIS Premium Foldable Plastic Shoe Rack for Home, 𝟑 𝐃𝐨𝐨𝐫 𝟔 𝐒𝐡𝐞𝐥𝐟 Shoe Cabinet, Dustproof & Waterproof Organizer, Portable Space Saving Storage for Entryway, Bedroom & Living Room, Grey" [ref=e1085] [cursor=pointer]:
+                        - /url: /AYSIS-%F0%9D%90%92%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%9F-Dustproof-Waterproof-Organizer/dp/B0H75JDT88/ref=zg_bsnr_c_kitchen_d_sccl_4/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H75JDT88&psc=1
+                        - generic "AYSIS Premium Foldable Plastic Shoe Rack for Home, 𝟑 𝐃𝐨𝐨𝐫 𝟔 𝐒𝐡𝐞𝐥𝐟 Shoe Cabinet, Dustproof & Waterproof Organizer, Portable Space Saving Storage for Entryway, Bedroom & Living Room, Grey" [ref=e1087]: AYSIS Premium Foldable Plastic Shoe Rack for Home, 𝟑 𝐃𝐨𝐨𝐫 𝟔 𝐒𝐡𝐞𝐥𝐟 Shoe Cabinet, Dustproof & Waterproof Organizer, Portable…
+                      - link "4.8 out of 5 stars, 524 ratings" [ref=e1090] [cursor=pointer]:
+                        - /url: /product-reviews/B0H75JDT88/ref=zg_bsnr_c_kitchen_d_sccl_4_cr/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H75JDT88
+                        - generic [ref=e1092]: 4.8 out of 5 stars
+                        - text: "524"
+                      - link "₹1,644.00" [ref=e1096] [cursor=pointer]:
+                        - /url: /AYSIS-%F0%9D%90%92%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%9F-Dustproof-Waterproof-Organizer/dp/B0H75JDT88/ref=zg_bsnr_c_kitchen_d_sccl_4/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H75JDT88&psc=1
+                        - generic [ref=e1098]: ₹1,644.00
+              - listitem [ref=e1099]:
+                - generic [ref=e1100]:
+                  - generic [ref=e1101]: "#5"
+                  - generic [ref=e1105]:
+                    - link [ref=e1106] [cursor=pointer]:
+                      - /url: /Mota-Barman-Writing-Multipurpose-Spiderman/dp/B0H843FZ66/ref=zg_bsnr_c_kitchen_d_sccl_5/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H843FZ66&psc=1
+                    - generic [ref=e1109]:
+                      - link "Mota Barman Office Table for Home/Writing Desk for Office/Folding Table for School/Folding Study Table/Work from Home Multipurpose Table (Spiderman)" [ref=e1110] [cursor=pointer]:
+                        - /url: /Mota-Barman-Writing-Multipurpose-Spiderman/dp/B0H843FZ66/ref=zg_bsnr_c_kitchen_d_sccl_5/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H843FZ66&psc=1
+                        - generic "Mota Barman Office Table for Home/Writing Desk for Office/Folding Table for School/Folding Study Table/Work from Home Multipurpose Table (Spiderman)" [ref=e1112]: Mota Barman Office Table for Home/Writing Desk for Office/Folding Table for School/Folding Study Table/Work…
+                      - link "4.7 out of 5 stars, 27 ratings" [ref=e1115] [cursor=pointer]:
+                        - /url: /product-reviews/B0H843FZ66/ref=zg_bsnr_c_kitchen_d_sccl_5_cr/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H843FZ66
+                        - generic [ref=e1117]: 4.7 out of 5 stars
+                        - text: "27"
+                      - link "₹369.00" [ref=e1121] [cursor=pointer]:
+                        - /url: /Mota-Barman-Writing-Multipurpose-Spiderman/dp/B0H843FZ66/ref=zg_bsnr_c_kitchen_d_sccl_5/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H843FZ66&psc=1
+                        - generic [ref=e1123]: ₹369.00
+              - listitem [ref=e1124]:
+                - generic [ref=e1125]:
+                  - generic [ref=e1126]: "#6"
+                  - generic [ref=e1130]:
+                    - link [ref=e1131] [cursor=pointer]:
+                      - /url: /Xech-Rechargeable-Brightness-Rotatable-Detachable/dp/B0FH2255N2/ref=zg_bsnr_c_kitchen_d_sccl_6/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0FH2255N2&psc=1
+                    - generic [ref=e1134]:
+                      - link "Xech Rechargeable Magnetic Wall Light | Stick-On or Screw Mount | Touch Control LED Lamp | 3 Brightness Levels | USB-C Warm White Light | Rotatable Detachable Head (Magmount) (White)" [ref=e1135] [cursor=pointer]:
+                        - /url: /Xech-Rechargeable-Brightness-Rotatable-Detachable/dp/B0FH2255N2/ref=zg_bsnr_c_kitchen_d_sccl_6/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0FH2255N2&psc=1
+                        - generic "Xech Rechargeable Magnetic Wall Light | Stick-On or Screw Mount | Touch Control LED Lamp | 3 Brightness Levels | USB-C Warm White Light | Rotatable Detachable Head (Magmount) (White)" [ref=e1137]: Xech Rechargeable Magnetic Wall Light | Stick-On or Screw Mount | Touch Control LED Lamp | 3 Brightness Levels | USB-C Warm…
+                      - link "3.9 out of 5 stars, 316 ratings" [ref=e1140] [cursor=pointer]:
+                        - /url: /product-reviews/B0FH2255N2/ref=zg_bsnr_c_kitchen_d_sccl_6_cr/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0FH2255N2
+                        - generic [ref=e1142]: 3.9 out of 5 stars
+                        - text: "316"
+                      - link "₹499.00" [ref=e1146] [cursor=pointer]:
+                        - /url: /Xech-Rechargeable-Brightness-Rotatable-Detachable/dp/B0FH2255N2/ref=zg_bsnr_c_kitchen_d_sccl_6/520-4122555-3020922?pd_rd_w=12iQb&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0FH2255N2&psc=1
+                        - generic [ref=e1148]: ₹499.00
+                  - button "Watch the video" [ref=e1150] [cursor=pointer]:
+                    - img "Watch the video" [ref=e1152]
+          - generic: 
+        - group [ref=e1162]:
+          - generic [ref=e1164]:
+            - heading "Hot New Releases in Clothing & Accessories" [level=2] [ref=e1165]
+            - link "Hot New Releases in Clothing & Accessories - See More" [ref=e1167] [cursor=pointer]:
+              - /url: /gp/new-releases/apparel/ref=zg_bsnr_apparel_sm
+              - text: See More
+          - group [ref=e1172]:
+            - list [ref=e1173]:
+              - listitem [ref=e1174]:
+                - generic [ref=e1175]:
+                  - generic [ref=e1176]: "#1"
+                  - generic [ref=e1180]:
+                    - link [ref=e1181] [cursor=pointer]:
+                      - /url: /Nexsus-Apparels-Stretchable-Compression-Activewear/dp/B0G1SVPPX4/ref=zg_bsnr_c_apparel_d_sccl_1/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0G1SVPPX4&psc=1
+                    - generic [ref=e1184]:
+                      - link "Nexsus Apparels Gym T-Shirt for Women-Quick Dry Sports & Workout T-Shirt for Women, Activewear for Running, Casual & Gym Use, Available in Plus Size's" [ref=e1185] [cursor=pointer]:
+                        - /url: /Nexsus-Apparels-Stretchable-Compression-Activewear/dp/B0G1SVPPX4/ref=zg_bsnr_c_apparel_d_sccl_1/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0G1SVPPX4&psc=1
+                        - generic "Nexsus Apparels Gym T-Shirt for Women-Quick Dry Sports & Workout T-Shirt for Women, Activewear for Running, Casual & Gym Use, Available in Plus Size's" [ref=e1187]: Nexsus Apparels Gym T-Shirt for Women-Quick Dry Sports & Workout T-Shirt for Women, Activewear for Running, Casual &…
+                      - link "4.2 out of 5 stars, 599 ratings" [ref=e1190] [cursor=pointer]:
+                        - /url: /product-reviews/B0G1SVPPX4/ref=zg_bsnr_c_apparel_d_sccl_1_cr/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0G1SVPPX4
+                        - generic [ref=e1192]: 4.2 out of 5 stars
+                        - text: "599"
+                      - link "₹297.00" [ref=e1196] [cursor=pointer]:
+                        - /url: /Nexsus-Apparels-Stretchable-Compression-Activewear/dp/B0G1SVPPX4/ref=zg_bsnr_c_apparel_d_sccl_1/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0G1SVPPX4&psc=1
+                        - generic [ref=e1198]: ₹297.00
+                  - button "Watch the video" [ref=e1200] [cursor=pointer]:
+                    - img "Watch the video" [ref=e1202]
+              - listitem [ref=e1208]:
+                - generic [ref=e1209]:
+                  - generic [ref=e1210]: "#2"
+                  - generic [ref=e1214]:
+                    - link [ref=e1215] [cursor=pointer]:
+                      - /url: /Nermosa-Printed-Anarkali-Dupatta-Standard/dp/B0H1HNFN31/ref=zg_bsnr_c_apparel_d_sccl_2/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H1HNFN31&psc=1
+                    - generic [ref=e1218]:
+                      - link "Nermosa Women Printed Anarkali Kurta and Pant Set with Dupatta | Printed Kurta Set | Women Kurta Sets |" [ref=e1219] [cursor=pointer]:
+                        - /url: /Nermosa-Printed-Anarkali-Dupatta-Standard/dp/B0H1HNFN31/ref=zg_bsnr_c_apparel_d_sccl_2/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H1HNFN31&psc=1
+                        - generic [ref=e1221]: Nermosa Women Printed Anarkali Kurta and Pant Set with Dupatta | Printed Kurta Set | Women Kurta Sets |
+                      - link "4.3 out of 5 stars, 441 ratings" [ref=e1224] [cursor=pointer]:
+                        - /url: /product-reviews/B0H1HNFN31/ref=zg_bsnr_c_apparel_d_sccl_2_cr/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H1HNFN31
+                        - generic [ref=e1226]: 4.3 out of 5 stars
+                        - text: "441"
+                      - link "₹736.00" [ref=e1230] [cursor=pointer]:
+                        - /url: /Nermosa-Printed-Anarkali-Dupatta-Standard/dp/B0H1HNFN31/ref=zg_bsnr_c_apparel_d_sccl_2/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H1HNFN31&psc=1
+                        - generic [ref=e1232]: ₹736.00
+              - listitem [ref=e1233]:
+                - generic [ref=e1234]:
+                  - generic [ref=e1235]: "#3"
+                  - generic [ref=e1239]:
+                    - link [ref=e1240] [cursor=pointer]:
+                      - /url: /SWAGR-ZincShield-Anti-Bacterial-BreatheSoft-Multicolor/dp/B0H6M2MLPL/ref=zg_bsnr_c_apparel_d_sccl_3/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6M2MLPL&psc=1
+                    - generic [ref=e1243]:
+                      - link "SWAGR 5 Pack Women's High Coverage Super Combed Cotton Hipster Panty Set | Powered by ZincShield Anti-Bacterial Tech | BreatheSoft Fabric | MarkFree Waistband | SOXCO Style HP06" [ref=e1244] [cursor=pointer]:
+                        - /url: /SWAGR-ZincShield-Anti-Bacterial-BreatheSoft-Multicolor/dp/B0H6M2MLPL/ref=zg_bsnr_c_apparel_d_sccl_3/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6M2MLPL&psc=1
+                        - generic "SWAGR 5 Pack Women's High Coverage Super Combed Cotton Hipster Panty Set | Powered by ZincShield Anti-Bacterial Tech | BreatheSoft Fabric | MarkFree Waistband | SOXCO Style HP06" [ref=e1246]: SWAGR 5 Pack Women's High Coverage Super Combed Cotton Hipster Panty Set | Powered by ZincShield Anti-Bacterial Tech |…
+                      - link "4.6 out of 5 stars, 23 ratings" [ref=e1249] [cursor=pointer]:
+                        - /url: /product-reviews/B0H6M2MLPL/ref=zg_bsnr_c_apparel_d_sccl_3_cr/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6M2MLPL
+                        - generic [ref=e1251]: 4.6 out of 5 stars
+                        - text: "23"
+                      - link "₹497.17" [ref=e1255] [cursor=pointer]:
+                        - /url: /SWAGR-ZincShield-Anti-Bacterial-BreatheSoft-Multicolor/dp/B0H6M2MLPL/ref=zg_bsnr_c_apparel_d_sccl_3/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H6M2MLPL&psc=1
+                        - generic [ref=e1257]: ₹497.17
+              - listitem [ref=e1258]:
+                - generic [ref=e1259]:
+                  - generic [ref=e1260]: "#4"
+                  - generic [ref=e1264]:
+                    - link [ref=e1265] [cursor=pointer]:
+                      - /url: /BUGARIO-JellyLift-Underwire-Invisible-Adjustable/dp/B0H3WHKZL3/ref=zg_bsnr_c_apparel_d_sccl_4/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H3WHKZL3&psc=1
+                    - generic [ref=e1268]:
+                      - link "BUGARIO JellyLift Seamless Wireless Jelly Bra for Women | No Underwire, Deep V Invisible T-Shirt Bra | 360 Jelly Support, Adjustable Straps | S-3XL" [ref=e1269] [cursor=pointer]:
+                        - /url: /BUGARIO-JellyLift-Underwire-Invisible-Adjustable/dp/B0H3WHKZL3/ref=zg_bsnr_c_apparel_d_sccl_4/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H3WHKZL3&psc=1
+                        - generic "BUGARIO JellyLift Seamless Wireless Jelly Bra for Women | No Underwire, Deep V Invisible T-Shirt Bra | 360 Jelly Support, Adjustable Straps | S-3XL" [ref=e1271]: BUGARIO JellyLift Seamless Wireless Jelly Bra for Women | No Underwire, Deep V Invisible T-Shirt Bra | 360 Jelly Support,…
+                      - link "4.2 out of 5 stars, 176 ratings" [ref=e1274] [cursor=pointer]:
+                        - /url: /product-reviews/B0H3WHKZL3/ref=zg_bsnr_c_apparel_d_sccl_4_cr/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H3WHKZL3
+                        - generic [ref=e1276]: 4.2 out of 5 stars
+                        - text: "176"
+                      - link "₹1,499.00" [ref=e1280] [cursor=pointer]:
+                        - /url: /BUGARIO-JellyLift-Underwire-Invisible-Adjustable/dp/B0H3WHKZL3/ref=zg_bsnr_c_apparel_d_sccl_4/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H3WHKZL3&psc=1
+                        - generic [ref=e1282]: ₹1,499.00
+              - listitem [ref=e1283]:
+                - generic [ref=e1284]:
+                  - generic [ref=e1285]: "#5"
+                  - generic [ref=e1289]:
+                    - link [ref=e1290] [cursor=pointer]:
+                      - /url: /Imsa-Moda-Lightly-Coverage-Wirefree/dp/B0GZ821XF4/ref=zg_bsnr_c_apparel_d_sccl_5/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0GZ821XF4&psc=1
+                    - generic [ref=e1293]:
+                      - link "Imsa Moda Women's Nylon Lycra Lightly Padded Full Coverage Wirefree T-Shirt Bra Combo Pack of 2" [ref=e1294] [cursor=pointer]:
+                        - /url: /Imsa-Moda-Lightly-Coverage-Wirefree/dp/B0GZ821XF4/ref=zg_bsnr_c_apparel_d_sccl_5/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0GZ821XF4&psc=1
+                        - generic [ref=e1296]: Imsa Moda Women's Nylon Lycra Lightly Padded Full Coverage Wirefree T-Shirt Bra Combo Pack of 2
+                      - link "4.0 out of 5 stars, 177 ratings" [ref=e1299] [cursor=pointer]:
+                        - /url: /product-reviews/B0GZ821XF4/ref=zg_bsnr_c_apparel_d_sccl_5_cr/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0GZ821XF4
+                        - generic [ref=e1301]: 4.0 out of 5 stars
+                        - text: "177"
+                      - link "₹279.00" [ref=e1305] [cursor=pointer]:
+                        - /url: /Imsa-Moda-Lightly-Coverage-Wirefree/dp/B0GZ821XF4/ref=zg_bsnr_c_apparel_d_sccl_5/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0GZ821XF4&psc=1
+                        - generic [ref=e1307]: ₹279.00
+              - listitem [ref=e1308]:
+                - generic [ref=e1309]:
+                  - generic [ref=e1310]: "#6"
+                  - generic [ref=e1314]:
+                    - link [ref=e1315] [cursor=pointer]:
+                      - /url: /RIEKA-Applique-Embroidered-Mandarin-D-Pink-L/dp/B0H268RRYW/ref=zg_bsnr_c_apparel_d_sccl_6/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H268RRYW&psc=1
+                    - generic [ref=e1318]:
+                      - link "RIEKA Womens Floral Applique Embroidered Fancy Top with Mandarin Collar Button Down Front Half Sleeves Relaxed Fit Casual Tunic Top for Women" [ref=e1319] [cursor=pointer]:
+                        - /url: /RIEKA-Applique-Embroidered-Mandarin-D-Pink-L/dp/B0H268RRYW/ref=zg_bsnr_c_apparel_d_sccl_6/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H268RRYW&psc=1
+                        - generic "RIEKA Womens Floral Applique Embroidered Fancy Top with Mandarin Collar Button Down Front Half Sleeves Relaxed Fit Casual Tunic Top for Women" [ref=e1321]: RIEKA Womens Floral Applique Embroidered Fancy Top with Mandarin Collar Button Down Front Half Sleeves Relaxed Fit Casual…
+                      - link "4.2 out of 5 stars, 58 ratings" [ref=e1324] [cursor=pointer]:
+                        - /url: /product-reviews/B0H268RRYW/ref=zg_bsnr_c_apparel_d_sccl_6_cr/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H268RRYW
+                        - generic [ref=e1326]: 4.2 out of 5 stars
+                        - text: "58"
+                      - link "₹645.00" [ref=e1330] [cursor=pointer]:
+                        - /url: /RIEKA-Applique-Embroidered-Mandarin-D-Pink-L/dp/B0H268RRYW/ref=zg_bsnr_c_apparel_d_sccl_6/520-4122555-3020922?pd_rd_w=lJWvc&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=TB3X2SVXMB72GVFR39DB&pd_rd_wg=Q8jTI&pd_rd_r=0d1979fe-6bf9-4df7-a084-ea4918178674&pd_rd_i=B0H268RRYW&psc=1
+                        - generic [ref=e1332]: ₹645.00
+          - generic: 
+    - generic [ref=e1336]:
+      - heading "About Hot New Releases" [level=1] [ref=e1337]
+      - text: These frequently updated lists contain bestselling items.
+  - complementary "Your recently viewed items and featured recommendations"
+  - generic [ref=e1338]:
+    - button "Back to top" [ref=e1339] [cursor=pointer]:
+      - generic [ref=e1340]: Back to top
+    - generic [ref=e1341]:
+      - generic [ref=e1342]:
+        - heading "Get to Know Us" [level=6] [ref=e1343]
+        - list [ref=e1344]:
+          - listitem [ref=e1345]:
+            - link "About Amazon" [ref=e1346] [cursor=pointer]:
+              - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=e1347]:
+            - link "Careers" [ref=e1348] [cursor=pointer]:
+              - /url: https://amazon.jobs
+          - listitem [ref=e1349]:
+            - link "Press Releases" [ref=e1350] [cursor=pointer]:
+              - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=e1351]:
+            - link "Amazon Science" [ref=e1352] [cursor=pointer]:
+              - /url: https://www.amazon.science
+      - generic [ref=e1354]:
+        - heading "Connect with Us" [level=6] [ref=e1355]
+        - list [ref=e1356]:
+          - listitem [ref=e1357]:
+            - link "Facebook" [ref=e1358] [cursor=pointer]:
+              - /url: https://www.facebook.com/AmazonIN
+          - listitem [ref=e1359]:
+            - link "Twitter" [ref=e1360] [cursor=pointer]:
+              - /url: https://x.com/AmazonIN
+          - listitem [ref=e1361]:
+            - link "Instagram" [ref=e1362] [cursor=pointer]:
+              - /url: https://www.instagram.com/amazondotin
+      - generic [ref=e1364]:
+        - heading "Make Money with Us" [level=6] [ref=e1365]
+        - list [ref=e1366]:
+          - listitem [ref=e1367]:
+            - link "Sell on Amazon" [ref=e1368] [cursor=pointer]:
+              - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+          - listitem [ref=e1369]:
+            - link "Sell under Amazon Accelerator" [ref=e1370] [cursor=pointer]:
+              - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+          - listitem [ref=e1371]:
+            - link "Protect and Build Your Brand" [ref=e1372] [cursor=pointer]:
+              - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+          - listitem [ref=e1373]:
+            - link "Amazon Global Selling" [ref=e1374] [cursor=pointer]:
+              - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+          - listitem [ref=e1375]:
+            - link "Supply to Amazon" [ref=e1376] [cursor=pointer]:
+              - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+          - listitem [ref=e1377]:
+            - link "Become an Affiliate" [ref=e1378] [cursor=pointer]:
+              - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+          - listitem [ref=e1379]:
+            - link "Fulfilment by Amazon" [ref=e1380] [cursor=pointer]:
+              - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+          - listitem [ref=e1381]:
+            - link "Advertise Your Products" [ref=e1382] [cursor=pointer]:
+              - /url: https://advertising.amazon.in/?ref=Amz.in
+          - listitem [ref=e1383]:
+            - link "Amazon Pay on Merchants" [ref=e1384] [cursor=pointer]:
+              - /url: https://www.amazonpay.in/merchant
+      - generic [ref=e1386]:
+        - heading "Let Us Help You" [level=6] [ref=e1387]
+        - list [ref=e1388]:
+          - listitem [ref=e1389]:
+            - link "Your Account" [ref=e1390] [cursor=pointer]:
+              - /url: /gp/css/homepage.html?ref_=footer_ya
+          - listitem [ref=e1391]:
+            - link "Returns Centre" [ref=e1392] [cursor=pointer]:
+              - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+          - listitem [ref=e1393]:
+            - link "Recalls and Product Safety Alerts" [ref=e1394] [cursor=pointer]:
+              - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+          - listitem [ref=e1395]:
+            - link "100% Purchase Protection" [ref=e1396] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+          - listitem [ref=e1397]:
+            - link "Amazon App Download" [ref=e1398] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+          - listitem [ref=e1399]:
+            - link "Help" [ref=e1400] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+    - generic [ref=e1402]:
+      - link "Amazon India Home" [ref=e1405] [cursor=pointer]:
+        - /url: /ref=footer_logo
+      - generic [ref=e1408]:
+        - generic [ref=e1409]:
+          - link "Choose a language for shopping. Current selection is English." [ref=e1410] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+            - generic [ref=e1412]: English
+          - button "Expand to Change Language or Country" [ref=e1413] [cursor=pointer]
+        - button "Choose a country/region for shopping. The current selection is India." [ref=e1414] [cursor=pointer]:
+          - generic [ref=e1416]: India
+    - generic "More on Amazon" [ref=e1417]:
+      - generic "More on Amazon" [ref=e1418]:
+        - list [ref=e1419]:
+          - listitem [ref=e1420]:
+            - link "AbeBooks Books, art & collectibles" [ref=e1421] [cursor=pointer]:
+              - /url: https://www.abebooks.com/
+              - heading "AbeBooks" [level=5] [ref=e1422]
+              - generic [ref=e1423]:
+                - text: Books, art
+                - text: "& collectibles"
+          - listitem [ref=e1424]
+          - listitem [ref=e1425]:
+            - link "Amazon Web Services Scalable Cloud Computing Services" [ref=e1426] [cursor=pointer]:
+              - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+              - heading "Amazon Web Services" [level=5] [ref=e1427]
+              - generic [ref=e1428]:
+                - text: Scalable Cloud
+                - text: Computing Services
+          - listitem [ref=e1429]
+          - listitem [ref=e1430]:
+            - link "Audible Download Audio Books" [ref=e1431] [cursor=pointer]:
+              - /url: https://www.audible.in/
+              - heading "Audible" [level=5] [ref=e1432]
+              - generic [ref=e1433]:
+                - text: Download
+                - text: Audio Books
+          - listitem [ref=e1434]
+          - listitem [ref=e1435]:
+            - link "IMDb Movies, TV & Celebrities" [ref=e1436] [cursor=pointer]:
+              - /url: https://www.imdb.com/
+              - heading "IMDb" [level=5] [ref=e1437]
+              - generic [ref=e1438]:
+                - text: Movies, TV
+                - text: "& Celebrities"
+        - list [ref=e1439]:
+          - listitem [ref=e1440]:
+            - link "Shopbop Designer Fashion Brands" [ref=e1441] [cursor=pointer]:
+              - /url: https://www.shopbop.com/
+              - heading "Shopbop" [level=5] [ref=e1442]
+              - generic [ref=e1443]:
+                - text: Designer
+                - text: Fashion Brands
+          - listitem [ref=e1444]
+          - listitem [ref=e1445]:
+            - link "Amazon Business Everything For Your Business" [ref=e1446] [cursor=pointer]:
+              - /url: /business?ref=footer_aingw
+              - heading "Amazon Business" [level=5] [ref=e1447]
+              - generic [ref=e1448]:
+                - text: Everything For
+                - text: Your Business
+          - listitem [ref=e1449]
+          - listitem [ref=e1450]:
+            - link "Amazon Music Stream millions of songs" [ref=e1451] [cursor=pointer]:
+              - /url: /music/player?ref=footer_apm
+              - heading "Amazon Music" [level=5] [ref=e1452]
+              - generic [ref=e1453]: Stream millions of songs
+          - listitem [ref=e1454]
+          - listitem [ref=e1455]
+    - generic [ref=e1456]:
+      - list [ref=e1457]:
+        - listitem [ref=e1458]:
+          - link "Conditions of Use & Sale" [ref=e1459] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+        - listitem [ref=e1460]:
+          - link "Privacy Notice" [ref=e1461] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+        - listitem [ref=e1462]:
+          - link "Interest-Based Ads" [ref=e1463] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+      - generic [ref=e1464]: © 1996-2026, Amazon.com, Inc. or its affiliates
+  - iframe [ref=e1466]
+```
